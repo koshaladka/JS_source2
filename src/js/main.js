@@ -3,6 +3,7 @@ import sliders from "./modules/sliders";
 
 import accordion from "./modules/accordion";
 import burger from "./modules/burger";
+import drop from "./modules/drop";
 
 window.addEventListener('DOMContentLoaded', () =>{
     'use strict';
@@ -12,6 +13,7 @@ window.addEventListener('DOMContentLoaded', () =>{
     sliders ('.main-slider-item', 'vertical');
 
     accordion ('.accordion-heading');
-    burger ('.burger-menu', '.burger')
+    burger ('.burger-menu', '.burger');
+    drop();
 
 });
