@@ -40,6 +40,14 @@ const mask = (selector) => {
 
     }
 
+    let inputs = document.querySelectorAll(selector);
+
+    inputs.forEach(input => {
+        input.addEventListener('input', createMask);
+        input.addEventListener('focus', createMask);
+        input.addEventListener('blur', createMask);
+    })
+
 };
 
 export default mask;
