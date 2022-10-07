@@ -3,6 +3,8 @@ import sliders from "./modules/sliders";
 import forms from "./modules/forms";
 import mask from "./modules/mask";
 import chekTestInputs from "./modules/chekTestInputs";
+import calc from "./modules/calc";
+import filter from "./modules/filter";
 
 import accordion from "./modules/accordion";
 import burger from "./modules/burger";
@@ -21,7 +23,8 @@ window.addEventListener('DOMContentLoaded', () =>{
     chekTestInputs('[name="name"]');
     chekTestInputs('[name="message"]');
     showMoreStyles ('.button-styles', '#styles .row' );
-
+    calc('#size', '#material', '#options', '.promocode', '.calc-price');
+    filter();
 
     accordion ('.accordion-heading');
     burger ('.burger-menu', '.burger');
