@@ -30,6 +30,6 @@ window.addEventListener('DOMContentLoaded', () =>{
     accordion ('.accordion-heading');
     burger ('.burger-menu', '.burger');
     drop();
-    scrolling();
+    scrolling('.pageup');
 
 });
